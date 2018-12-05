@@ -1,0 +1,12 @@
+<% COP1_CHANNELS.each do |channel| %>
+<%="TELEMETRY COP1 COP1_TRAILER_VC_#{channel} BIG_ENDIAN 'COP1 Trailer Information'"%>
+<%="  APPEND_ID_ITEM VCID 64 UINT 0x434f50315643490#{channel} \"COP1 VC_ID\""%>
+<%="  APPEND_ITEM STATUS_FIELDS 8 UINT \"Status Fields\""%>
+<%="  APPEND_ITEM NORFAVAIL 8 UINT \"No RF Avail Flag\""%>
+<%="  APPEND_ITEM NO_BIT_LOCK 8 UINT \"No Bit Lock Flag\""%>
+<%="  APPEND_ITEM LOCKOUT 8 UINT \"Lockout Flag\""%>
+<%="  APPEND_ITEM WAIT 8 UINT \"Wait Flag\""%>
+<%="  APPEND_ITEM RETRANSMIT 8 UINT \"Retransmit Flag\""%>
+<%="  APPEND_ITEM FARM_B_COUNT 8 UINT \"Farm B Count\""%>
+<%="  APPEND_ITEM REPORT_VALUE 8 UINT \"Report Value\""%>
+<% end %>

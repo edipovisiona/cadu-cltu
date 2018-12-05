@@ -1,0 +1,7 @@
+# Requires for additinal .rb files
+REQUIRE cop1_defines.rb
+
+# Ignored Parameters
+# IGNORE_PARAMETER parameter_name
+IGNORE_PARAMETER FUNC_ID
+IGNORE_PARAMETER SPARE
